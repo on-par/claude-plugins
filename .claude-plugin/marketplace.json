@@ -1,0 +1,19 @@
+{
+  "name": "on-par",
+  "owner": {
+    "name": "Patrick Robinson",
+    "email": "patrick@patrickarobinson.com"
+  },
+  "metadata": {
+    "description": "A curated collection of Claude Code plugins for enhanced development workflows",
+    "version": "1.0.0",
+    "pluginRoot": "."
+  },
+  "plugins": [
+    {
+      "name": "rpi",
+      "source": "./rpi",
+      "description": "Research-Planning-Implementation strategy plugin for structured software development"
+    }
+  ]
+}

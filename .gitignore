@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Testing artifacts
+.rpi/
+
+# Node modules (if adding tooling later)
+node_modules/
+
+# Logs
+*.log
