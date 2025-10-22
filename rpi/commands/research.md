@@ -1,4 +1,5 @@
 ---
+name: rpi:research
 description: Research a problem using web and codebase agents
 argument-hint: [problem statement]
 ---

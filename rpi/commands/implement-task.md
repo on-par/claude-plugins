@@ -1,4 +1,5 @@
 ---
+name: rpi:implement-task
 description: Implement the next unchecked task from a plan
 argument-hint: [path to plan.md]
 ---

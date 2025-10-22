@@ -1,4 +1,5 @@
 ---
+name: rpi:plan
 description: Create an implementation plan from research document
 argument-hint: [path to research.md]
 ---

@@ -1,4 +1,5 @@
 ---
+name: rpi:implement
 description: Implement the entire plan with intelligent parallelization
 argument-hint: [path to plan.md]
 ---

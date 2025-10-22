@@ -1,4 +1,5 @@
 ---
+name: rpi:implement-phase
 description: Implement all tasks in the next unchecked phase
 argument-hint: [path to plan.md]
 ---
