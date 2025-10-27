@@ -1,6 +1,6 @@
 {
   "name": "rpi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Research-Planning-Implementation strategy plugin for structured software development",
   "author": "Patrick Robinson",
   "repository": "https://github.com/on-par/claude-plugins",

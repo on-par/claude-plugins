@@ -22,6 +22,12 @@ Create a detailed implementation plan based on the research document provided.
 
 3. **Create Plan Document**: After the software-task-planner agent completes, extract the plan and save it to a `plan.md` file in the same directory as the research document.
 
+**Path Construction:**
+- Extract the directory path from $ARGUMENTS
+- Save `plan.md` in that same directory
+- Example: If $ARGUMENTS is `rpi/oauth-implementation/research.md`, save to `rpi/oauth-implementation/plan.md`
+- Example: If $ARGUMENTS is `research.md`, save to `./plan.md`
+
 # Plan Output Requirements
 
 The `plan.md` file must include:
