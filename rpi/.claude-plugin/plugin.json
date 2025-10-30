@@ -2,7 +2,10 @@
   "name": "rpi",
   "version": "0.2.0",
   "description": "Research-Planning-Implementation strategy plugin for structured software development",
-  "author": "Patrick Robinson",
+  "author": {
+    "name": "Patrick Robinson",
+    "email": "patrick@onpardev.com"
+  },
   "repository": "https://github.com/on-par/claude-plugins",
   "keywords": [
     "research",
