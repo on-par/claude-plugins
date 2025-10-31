@@ -6,9 +6,14 @@ A curated collection of Claude Code plugins designed to enhance your development
 
 | Plugin | Version | Description |
 |--------|---------|-------------|
-| [RPI](./rpi/) | 0.1.0 | Research-Planning-Implementation strategy for disciplined software development |
+| [RPI](./rpi/) | 0.2.0 | Research-Planning-Implementation strategy for disciplined software development |
 
 ## Quick Start
+
+Add the marketplace:
+```bash
+/plugin marketplace add on-par@claude-plugins
+```
 
 Install any plugin from this marketplace:
 
