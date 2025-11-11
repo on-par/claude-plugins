@@ -31,7 +31,12 @@ Implement all phases and tasks from the plan with intelligent parallelization wh
 
    b. **Execute Task Batches**:
 
-      **For Parallel Tasks**: Launch multiple task-implementer agents in parallel using a single message with multiple Task tool calls:
+      **For Parallel Tasks**: Launch multiple specialized agents in parallel using a single message with multiple Task tool calls:
+      - **Task Classification**: Determine the appropriate specialist agent for each task:
+        * `frontend-specialist` for UI/UX components, client-side features, styling
+        * `backend-specialist` for APIs, business logic, database operations, server-side features
+        * `test-writer` for writing test suites or improving test coverage
+        * `task-implementer` for general tasks or mixed frontend/backend work
       - Each agent gets its specific task
       - Each agent receives phase and research context
       - **CRITICAL**: Each agent must use TodoWrite to create its own task-specific todo list
@@ -39,7 +44,8 @@ Implement all phases and tasks from the plan with intelligent parallelization wh
       - Wait for all parallel agents to complete
       - Update plan.md, changing all completed tasks from `- [ ]` to `- [x]` in a single Edit operation
 
-      **For Sequential Tasks**: Launch task-implementer agents one at a time:
+      **For Sequential Tasks**: Launch specialized agents one at a time:
+      - **Task Classification**: Use appropriate specialist agent (frontend-specialist, backend-specialist, test-writer, or task-implementer)
       - Provide task and all context
       - **CRITICAL**: Agent must use TodoWrite for task breakdown
       - Agent tracks progress with TodoWrite
@@ -47,15 +53,25 @@ Implement all phases and tasks from the plan with intelligent parallelization wh
       - Move to next task
 
    c. **Phase Verification**: After all phase tasks complete:
-      - Verify phase acceptance criteria
       - Run phase-level tests
-      - Report phase completion
+      - **If tests fail**: Launch `test-analyzer` agent to diagnose failures and recommend fixes
+      - **Code Review**: Launch `code-reviewer` agent to review all phase changes for:
+        * Code quality and maintainability
+        * Security vulnerabilities
+        * Performance issues
+        * Best practices compliance
+      - Address any critical issues found by the code reviewer
+      - Verify phase acceptance criteria
+      - Report phase completion with test and review results
 
 5. **Final Verification**: After all phases complete:
    - Run full test suite
+   - **If tests fail**: Launch `test-analyzer` agent for comprehensive diagnosis
+   - **Final Code Review**: Launch `code-reviewer` agent to review entire implementation
+   - Address any critical issues identified
    - Verify all acceptance criteria met
    - Check that all tasks are marked `- [x]`
-   - Generate completion report
+   - Generate completion report including test and review results
 
 6. **Report Status**: Provide comprehensive summary:
    - Total phases completed
