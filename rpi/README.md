@@ -14,12 +14,22 @@ Read more at [patrickarobinson.com/blog/introducing-rpi-strategy](https://patric
 
 ## Features
 
-### Four Specialized Agents
+### Nine Specialized Agents
 
+**Research & Planning Agents:**
 - **codebase-solution-researcher**: Deep codebase exploration to understand existing patterns and solutions
 - **web-research-specialist**: Research external documentation, libraries, and best practices
 - **software-task-planner**: Break down requirements into detailed, actionable implementation plans
-- **task-implementer**: Execute implementation tasks with precision and testing
+
+**Implementation Agents:**
+- **task-implementer**: Execute general implementation tasks with precision and testing
+- **frontend-specialist**: Build UI components with focus on accessibility, responsiveness, and UX
+- **backend-specialist**: Implement APIs, business logic, and database operations with security focus
+- **test-writer**: Create comprehensive test suites with high coverage
+
+**Quality Assurance Agents:**
+- **test-analyzer**: Diagnose test failures, analyze coverage, and identify flaky tests
+- **code-reviewer**: Review code for quality, security, performance, and best practices
 
 ### Five Workflow Commands
 
@@ -218,7 +228,7 @@ These artifacts serve as:
 
 ### task-implementer
 
-**Purpose**: Execute implementation tasks with precision
+**Purpose**: Execute general implementation tasks with precision
 
 **Capabilities**:
 - Clean code implementation
@@ -231,6 +241,111 @@ These artifacts serve as:
 - Writes tests alongside implementation
 - Commits frequently with clear messages
 - Documents complex logic
+
+---
+
+### frontend-specialist
+
+**Purpose**: Build exceptional user interfaces with focus on UX, accessibility, and performance
+
+**Capabilities**:
+- UI component implementation (React, Vue, Angular, Svelte)
+- State management (Redux, Context API, Pinia, etc.)
+- Responsive design and CSS (CSS Modules, Tailwind, Styled Components)
+- Accessibility compliance (WCAG 2.1 AA+)
+- Frontend testing (Jest, Vitest, React Testing Library, Playwright)
+- Performance optimization (code splitting, lazy loading, memoization)
+
+**Behavioral Guidelines**:
+- Accessibility-first approach with semantic HTML
+- Mobile-first responsive design
+- Comprehensive component testing
+- Type-safe component interfaces (TypeScript/PropTypes)
+- Browser compatibility verification
+
+---
+
+### backend-specialist
+
+**Purpose**: Build robust, secure, and scalable backend services
+
+**Capabilities**:
+- API design (REST, GraphQL)
+- Business logic implementation
+- Database operations (SQL, NoSQL)
+- Authentication & authorization (JWT, OAuth2, RBAC)
+- Security best practices (OWASP Top 10)
+- Caching strategies (Redis, Memcached)
+- Message queues (RabbitMQ, Kafka)
+- Backend testing (unit, integration, e2e)
+
+**Behavioral Guidelines**:
+- Security-first implementation
+- Input validation and sanitization
+- Proper error handling and logging
+- Performance optimization (query optimization, indexing)
+- Transaction management for data integrity
+
+---
+
+### test-writer
+
+**Purpose**: Create comprehensive, maintainable test suites
+
+**Capabilities**:
+- Unit test creation
+- Integration test implementation
+- E2E test scenarios
+- Edge case and error scenario coverage
+- Test fixture and mock setup
+- Coverage analysis
+
+**Behavioral Guidelines**:
+- AAA pattern (Arrange-Act-Assert)
+- Clear, descriptive test naming
+- Independent, non-flaky tests
+- Proper mocking of external dependencies
+- Focus on meaningful coverage over percentage
+
+---
+
+### test-analyzer
+
+**Purpose**: Diagnose test issues and improve test suite health
+
+**Capabilities**:
+- Test failure diagnosis
+- Root cause analysis
+- Coverage gap identification
+- Flaky test detection
+- Performance bottleneck identification
+- Test quality assessment
+
+**Behavioral Guidelines**:
+- Thorough analysis of failure patterns
+- Prioritized recommendations (critical/major/minor)
+- Actionable fix suggestions
+- Focus on high-risk uncovered areas
+
+---
+
+### code-reviewer
+
+**Purpose**: Ensure code quality, security, and maintainability
+
+**Capabilities**:
+- Code quality assessment
+- Security vulnerability detection (OWASP Top 10)
+- Performance analysis
+- Best practices enforcement
+- Architecture review
+- Test coverage evaluation
+
+**Behavioral Guidelines**:
+- Categorize issues by severity (critical/major/minor)
+- Constructive, educational feedback
+- Specific examples and solutions
+- Balance criticism with positive observations
 
 ## Best Practices
 
