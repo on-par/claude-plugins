@@ -1,0 +1,23 @@
+{
+  "name": "product-team",
+  "version": "0.1.0",
+  "description": "Agile product team simulation plugin with specialized agents for different roles and commands for common team activities",
+  "author": {
+    "name": "Patrick Robinson",
+    "email": "patrick@onpardev.com",
+    "url": "https://patrickarobinson.com"
+  },
+  "homepage": "https://github.com/on-par/claude-plugins/tree/main/product-team",
+  "repository": "https://github.com/on-par/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "agile",
+    "scrum",
+    "product-team",
+    "collaboration",
+    "team-simulation",
+    "sprint-planning",
+    "backlog-refinement",
+    "retrospective"
+  ]
+}
