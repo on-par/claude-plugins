@@ -6,7 +6,7 @@ A curated collection of Claude Code plugins designed to enhance your development
 
 | Plugin | Version | Description |
 |--------|---------|-------------|
-| [RPI](./rpi/) | 0.2.0 | Research-Planning-Implementation strategy for disciplined software development |
+| [RPI](./rpi/) | 0.3.0 | Research-Planning-Implementation strategy for disciplined software development |
 
 ## Quick Start
 
