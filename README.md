@@ -7,7 +7,7 @@ A curated collection of Claude Code plugins designed to enhance your development
 | Plugin | Version | Description |
 |--------|---------|-------------|
 | [RPI](./rpi/) | 0.3.0 | Research-Planning-Implementation strategy for disciplined software development |
-| [Product Team](./product-team/) | 0.1.0 | Agile product team simulation plugin with specialized agents for different roles and commands for common team activities |
+| [Product Team](./product-team/) | 0.2.0 | Agile product team simulation plugin with specialized agents for different roles and commands for common team activities |
 
 ## Quick Start
 
