@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "A curated collection of Claude Code plugins for enhanced development workflows",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "pluginRoot": "."
   },
   "plugins": [
@@ -14,6 +14,11 @@
       "name": "rpi",
       "source": "./rpi",
       "description": "Research-Planning-Implementation strategy plugin for structured software development"
+    },
+    {
+      "name": "product-team",
+      "source": "./product-team",
+      "description": "Agile product team simulation plugin with specialized agents for different roles and commands for common team activities"
     }
   ]
 }
