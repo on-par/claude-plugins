@@ -24,14 +24,19 @@ Think of it as having a complete product team at your fingertips—each with the
 **Quality Assurance:**
 - **qa-engineer**: Test strategy, edge cases, quality criteria, risk analysis
 
-### Six Agile Ceremony Commands
+### Seven Team Commands
 
+**Agile Ceremonies:**
 - `/product-team:refine` - Run backlog refinement to turn ideas into well-defined stories
 - `/product-team:plan-sprint` - Conduct sprint planning and commit to work
 - `/product-team:kickoff` - Align team on technical approach before coding starts
 - `/product-team:review` - Demo and validate completed work
 - `/product-team:retro` - Reflect and identify improvements
 - `/product-team:standup` - Quick daily sync on progress and blockers
+
+**Development Workflow:**
+- `/product-team:check-pr` - Analyze PR comments and failed checks, then create and execute a fix plan
+- `/product-team:implement` - Implement a story end-to-end with TDD, code reviews, and product owner approval
 
 ## Installation
 
@@ -255,6 +260,48 @@ Output: Standup summary with progress, impediments, and action items.
 **Example:**
 ```
 /product-team:standup "Day 7 of sprint 15"
+```
+
+---
+
+### `/product-team:check-pr [PR number or empty]`
+
+**Purpose:** Analyze PR comments, failed checks, and create a remediation plan
+
+**When to use:**
+- PR has review comments that need addressing
+- CI/CD checks are failing
+- Need systematic approach to fix PR issues
+- Want team perspective on PR feedback
+
+**Output:** Remediation plan with prioritized fixes, implementation of fixes, and verification summary
+
+**Example:**
+```
+/product-team:check-pr
+```
+or
+```
+/product-team:check-pr 123
+```
+
+---
+
+### `/product-team:implement [story description]`
+
+**Purpose:** Implement a story end-to-end with TDD, code reviews, and product owner approval
+
+**When to use:**
+- Ready to implement a refined story
+- Want rigorous quality-first development
+- Need full TDD workflow with continuous reviews
+- Want product owner validation before completion
+
+**Output:** Fully implemented, tested, and approved feature ready to ship
+
+**Example:**
+```
+/product-team:implement "As an admin, I want to bulk import users from CSV"
 ```
 
 ## Agent Details
@@ -507,6 +554,6 @@ Built with inspiration from real agile teams and the challenges of software deve
 
 ---
 
-**Version:** 0.1.0
-**Status:** Initial Release
-**Last Updated:** 2025-01-18
+**Version:** 0.4.0
+**Status:** Active Development
+**Last Updated:** 2025-01-19
