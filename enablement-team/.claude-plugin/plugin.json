@@ -1,0 +1,25 @@
+{
+  "name": "enablement-team",
+  "version": "0.1.0",
+  "description": "Platform and infrastructure team simulation with DevOps, SRE, cloud specialists, and security experts",
+  "author": {
+    "name": "Patrick Robinson",
+    "email": "patrick@onpardev.com",
+    "url": "https://patrickarobinson.com"
+  },
+  "homepage": "https://github.com/on-par/claude-plugins/tree/main/enablement-team",
+  "repository": "https://github.com/on-par/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "devops",
+    "sre",
+    "infrastructure",
+    "platform",
+    "cloud",
+    "aws",
+    "azure",
+    "security",
+    "database",
+    "enablement"
+  ]
+}
