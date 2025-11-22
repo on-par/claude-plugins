@@ -30,56 +30,78 @@ Create a detailed implementation plan based on the research document provided.
 
 # Plan Output Requirements
 
-The `plan.md` file must include:
+The `plan.md` file must follow this lean, TDD-focused structure:
+
+---
 
 ## Problem Summary
-- Brief overview of what is being implemented
-- Link or reference to the research document
+- Brief overview of what is being implemented (1-2 sentences)
+- Reference to the research document
 
 ## Prerequisites
 - Required dependencies or tools to install
 - Environment setup needed
 - Any blocking issues that must be resolved first
+- ⚠️ Critical risks inline (e.g., "⚠️ This changes the auth flow - ensure feature flag is enabled")
 
 ## Implementation Phases
 
-Break down the work into logical phases. Each phase should contain:
+Aim for 3-5 phases. If more are needed, consider breaking into multiple plans or confirm with the user.
 
-### Phase N: [Phase Name]
-**Goal:** What this phase accomplishes
+Each phase follows this structure:
+
+### Phase N: [Descriptive Title for Skimmability]
+
+**Goal:** Single sentence describing what this phase accomplishes.
+
+**Context:**
+- Key file references (e.g., "Builds on `src/services/user.service.ts`")
+- Pattern references (e.g., "See Appendix A for validation pattern")
 
 **Tasks:**
-- [ ] Specific, atomic task (file:line reference where applicable)
-- [ ] Another specific task
-- [ ] etc.
 
-**Acceptance Criteria:**
-- How to verify this phase is complete
-- Any tests that should pass
+Tasks follow TDD Red-Green-Refactor. Each feature/unit gets this triplet:
 
-## Implementation Order
+- [ ] 🔴 Write unit test for [specific behavior] (expect fail)
+- [ ] 🟢 Implement [specific behavior] (expect pass)
+- [ ] 🔵 Refactor [specific behavior] if needed (keep passing)
 
-Specify the recommended order for executing phases and any dependencies between phases.
+Example:
+- [ ] 🔴 Write unit test for email format validation (expect fail)
+- [ ] 🟢 Implement email format validation (expect pass)
+- [ ] 🔵 Refactor email validation if needed (keep passing)
+- [ ] 🔴 Write unit test for password strength check (expect fail)
+- [ ] 🟢 Implement password strength check (expect pass)
+- [ ] 🔵 Refactor password strength check if needed (keep passing)
 
-## Testing Strategy
+---
 
-- Unit tests to write
-- Integration tests needed
-- Manual testing steps
+## Appendix: Code Examples
 
-## Risk Mitigation
+Reference existing codebase patterns when available:
+- "See `src/services/auth.service.ts:45` for service method pattern"
+- "See `src/schemas/user.schema.ts` for Zod validation pattern"
 
-- Potential blockers identified
-- Contingency approaches
-- Known edge cases to handle
+When no existing pattern exists, provide a minimal snippet:
+
+### Example A: [Pattern Name]
+```typescript
+// Minimal code snippet showing the pattern
+```
 
 ---
 
 **Format Requirements:**
 - Use markdown checkboxes `- [ ]` for all tasks
-- Include file paths and line numbers where specific code changes are needed
-- Keep tasks atomic (completable in one focused session)
-- Ensure tasks are ordered logically with clear dependencies
-- Make acceptance criteria measurable and specific
+- Use TDD indicators: 🔴 (red/test), 🟢 (green/implement), 🔵 (refactor)
+- Include explicit expectations: (expect fail), (expect pass), (keep passing)
+- Keep tasks atomic - one test, one implementation, one refactor
+- Include file paths in Context section, not in every task
+- Phases should be ordered logically (no separate "Implementation Order" section needed)
 
-**Note**: This plan is designed to be consumed by an implementation agent or developer. Each task should be clear enough to execute without requiring the full research context.
+**TDD Discipline:**
+- 🔴 Red: Write a failing test FIRST. Run it. It should fail. If it passes, investigate why.
+- 🟢 Green: Write just enough code to make the test pass. No more.
+- 🔵 Refactor: Clean up the code while keeping tests passing.
+
+**Note**: This plan is designed for TDD-focused implementation. Tests define acceptance - when all tests pass, the phase is complete.
