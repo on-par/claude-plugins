@@ -19,6 +19,11 @@
       "name": "product-team",
       "source": "./product-team",
       "description": "Agile product team simulation plugin with specialized agents for different roles and commands for common team activities"
+    },
+    {
+      "name": "utensils",
+      "source": "./utensils",
+      "description": "Minimal, single-purpose agents following the Unix philosophy - each does one thing well with strictly limited tools"
     }
   ]
 }

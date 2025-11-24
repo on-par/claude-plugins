@@ -9,6 +9,7 @@ A curated collection of Claude Code plugins designed to enhance your development
 | [RPI](./rpi/) | 0.4.0 | Research-Planning-Implementation strategy for disciplined software development |
 | [Product Team](./product-team/) | 0.5.0 | Agile product team simulation plugin with specialized agents for different roles and commands for common team activities |
 | [Enablement Team](./enablement-team/) | 0.1.0 | Platform and infrastructure team simulation with DevOps, SRE, cloud specialists, and security experts |
+| [Utensils](./utensils/) | 0.1.0 | Minimal, single-purpose agents following the Unix philosophy - each does one thing well with strictly limited tools |
 
 ## Quick Start
 

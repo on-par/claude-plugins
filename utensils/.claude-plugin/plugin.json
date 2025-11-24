@@ -1,0 +1,20 @@
+{
+  "name": "utensils",
+  "version": "0.1.0",
+  "description": "Minimal, single-purpose agents following the Unix philosophy - each does one thing well with strictly limited tools",
+  "author": {
+    "name": "On Par",
+    "url": "https://github.com/on-par"
+  },
+  "homepage": "https://github.com/on-par/claude-plugins",
+  "repository": "https://github.com/on-par/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "unix-philosophy",
+    "single-purpose",
+    "minimal",
+    "focused",
+    "composition"
+  ]
+}
