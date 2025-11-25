@@ -7,7 +7,7 @@ A curated collection of Claude Code plugins designed to enhance your development
 | Plugin | Version | Description |
 |--------|---------|-------------|
 | [RPI](./rpi/) | 0.4.0 | Research-Planning-Implementation strategy for disciplined software development |
-| [Product Team](./product-team/) | 0.5.0 | Agile product team simulation plugin with specialized agents for different roles and commands for common team activities |
+| [Product Team](./product-team/) | 0.5.1 | Agile product team simulation plugin with specialized agents for different roles and commands for common team activities |
 | [Enablement Team](./enablement-team/) | 0.1.0 | Platform and infrastructure team simulation with DevOps, SRE, cloud specialists, and security experts |
 | [Utensils](./utensils/) | 0.1.0 | Minimal, single-purpose agents following the Unix philosophy - each does one thing well with strictly limited tools |
 
@@ -61,9 +61,33 @@ We welcome high-quality plugin contributions! To add a plugin:
    └── LICENSE
    ```
 3. Update `.claude-plugin/marketplace.json`
-4. Submit a pull request
+4. Run `./sync-versions.sh` to sync plugin versions to the root README
+5. Submit a pull request
 
 See individual plugin READMEs for contribution guidelines specific to each plugin.
+
+### Version Management
+
+Use the bump script to update a plugin version:
+
+```bash
+# Bump patch version (0.6.0 -> 0.6.1)
+./scripts/bump-version.sh product-team
+
+# Bump minor version (0.6.0 -> 0.7.0)
+./scripts/bump-version.sh product-team minor
+
+# Bump major version (0.6.0 -> 1.0.0)
+./scripts/bump-version.sh product-team major
+```
+
+After bumping, sync the version to the root README:
+
+```bash
+./scripts/sync-versions.sh
+```
+
+The sync script automatically reads all plugin versions and updates the marketplace table. You can set this up as a pre-commit hook to keep versions in sync automatically.
 
 ## Support
 
