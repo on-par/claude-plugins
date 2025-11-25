@@ -24,7 +24,11 @@ Think of it as having a complete product team at your fingertips—each with the
 **Quality Assurance:**
 - **qa-engineer**: Test strategy, edge cases, quality criteria, risk analysis
 
-### Seven Team Commands
+### Eight Team Commands
+
+**End-to-End Workflow:**
+- `/product-team:sdlc` - Execute complete SDLC from idea through discovery, story breakdown, refinement, sprint planning, TDD implementation with PR reviews, demo, and release notes
+- `/product-team:board-meeting` - Present a user story to executives with Product Owner and Tech Lead explaining value, priority, approach, and risks
 
 **Agile Ceremonies:**
 - `/product-team:refine` - Run backlog refinement to turn ideas into well-defined stories
@@ -149,6 +153,53 @@ The team will:
 Output: Standup summary with progress, impediments, and action items.
 
 ## Command Reference
+
+### `/product-team:sdlc [feature idea]`
+
+**Purpose:** Execute complete Software Development Life Cycle from idea through production-ready release with executive documentation
+
+**When to use:**
+- Starting a new feature from scratch
+- Want end-to-end workflow automation
+- Need research, planning, implementation, and documentation all together
+- Following Extreme Programming (XP) and TDD practices
+- Using GitHub Flow with short-lived feature branches
+
+**Workflow Phases:**
+1. **Discovery & Research** - Product Owner questions, web research, codebase analysis
+2. **Feature Breakdown** - Break into INVEST-compliant user stories
+3. **Story Refinement** - Collaborative refinement with full team
+4. **Sprint Planning** - Team commits to sprint backlog
+5. **Sprint Execution** - TDD implementation with one branch per story, PR reviews
+6. **Sprint Demo** - Playwright-based demo for web apps, Product Owner acceptance
+7. **Release Notes** - Executive summary (Word) + technical details (Markdown)
+
+**Key Principles:**
+- Test-Driven Development (strict red-green-refactor)
+- Code coverage always increases, never decreases
+- One feature branch per story (GitHub Flow)
+- Tech Lead reviews all code changes
+- Product Owner accepts all work
+- Quality gates at every phase
+
+**Output:**
+- Research document with web + codebase findings
+- Backlog with INVEST-compliant stories
+- Refined stories with acceptance criteria
+- Sprint plan with committed stories
+- Implemented features with tests and PRs merged
+- Demo notes with Product Owner acceptance
+- Executive summary (Word) with screenshots
+- Technical release notes (Markdown)
+
+**Example:**
+```
+/product-team:sdlc "Add real-time notifications so users know immediately when important events occur"
+```
+
+**Based on:** "Accelerate" by Jez Humble - high-performing team practices
+
+---
 
 ### `/product-team:refine [story description]`
 
@@ -554,6 +605,6 @@ Built with inspiration from real agile teams and the challenges of software deve
 
 ---
 
-**Version:** 0.4.0
+**Version:** 0.6.0
 **Status:** Active Development
-**Last Updated:** 2025-01-19
+**Last Updated:** 2025-01-25
