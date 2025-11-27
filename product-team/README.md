@@ -4,13 +4,13 @@ Simulate a complete agile product team with specialized agents for different rol
 
 ## What is the Product Team Plugin?
 
-This plugin brings together six specialized team member agents and six agile ceremony commands to help you work through product development with diverse perspectives and structured collaboration.
+This plugin brings together eight specialized team member agents and ten agile ceremony commands to help you work through product development with diverse perspectives and structured collaboration.
 
 Think of it as having a complete product team at your fingertips—each with their own expertise, concerns, and point of view.
 
 ## Features
 
-### Six Specialized Team Member Agents
+### Eight Specialized Team Member Agents
 
 **Product & Process:**
 - **product-owner**: Represents users, defines requirements, sets priorities, validates value
@@ -23,6 +23,10 @@ Think of it as having a complete product team at your fingertips—each with the
 
 **Quality Assurance:**
 - **qa-engineer**: Test strategy, edge cases, quality criteria, risk analysis
+
+**Research & Analysis:**
+- **web-researcher**: Research best practices, find documentation, gather web-based technical information
+- **codebase-analyst**: Analyze existing code, identify affected files, assess technical feasibility
 
 ### Eight Team Commands
 
@@ -433,6 +437,32 @@ Quality assurance and testing expert. Focuses on:
 
 **When to use directly:** Need test strategy, edge case analysis, quality assessment, risk evaluation
 
+---
+
+### web-researcher
+**Model:** Sonnet | **Color:** Cyan | **Tools:** WebSearch, WebFetch, Context7 MCP, TodoWrite
+
+Web research specialist for technical discovery. Focuses on:
+- Researching best practices and patterns
+- Finding relevant libraries and frameworks
+- Identifying security considerations
+- Gathering code examples and documentation
+
+**When to use directly:** Need to research implementation approaches, compare technologies, or find documentation
+
+---
+
+### codebase-analyst
+**Model:** Sonnet | **Color:** Teal | **Tools:** Glob, Grep, Read, TodoWrite
+
+Codebase analysis expert for solution design. Focuses on:
+- Analyzing existing architecture and patterns
+- Identifying affected files and components
+- Assessing technical feasibility
+- Mapping dependencies and integration points
+
+**When to use directly:** Need to understand code impact, plan implementation paths, or assess change scope
+
 ## Use Cases
 
 ### Solo Developer Workflow
@@ -526,16 +556,43 @@ Modify command files to adapt ceremonies to your team:
 - Adjust output formats
 - Include team-specific practices
 
-### Integration with Development Workflow
+### Complete SDLC Workflow
 
-Combine with the RPI plugin:
+Use the full SDLC command for end-to-end development:
 
-1. Research (RPI plugin): `/rpi:research "OAuth implementation"`
-2. Refine (Product Team): `/product-team:refine "Add OAuth login"`
-3. Plan (RPI plugin): `/rpi:plan ./rpi/oauth/research.md`
-4. Kickoff (Product Team): `/product-team:kickoff "OAuth login story"`
-5. Implement (RPI plugin): `/rpi:implement-task ./rpi/oauth/plan.md`
-6. Review (Product Team): `/product-team:review "OAuth implementation"`
+```
+/product-team:sdlc "Add OAuth authentication for user login"
+```
+
+This self-contained workflow handles everything:
+1. **Discovery** - Product Owner questions, web research, codebase analysis
+2. **Breakdown** - INVEST-compliant user stories
+3. **Refinement** - Collaborative team refinement
+4. **Planning** - Sprint commitment
+5. **Implementation** - TDD with PR reviews
+6. **Demo** - Product Owner acceptance
+7. **Release Notes** - Executive + technical documentation
+
+### Individual Ceremony Workflow
+
+Or run individual ceremonies for more control:
+
+```
+/product-team:refine "Add OAuth login"
+/product-team:kickoff "OAuth login story"
+/product-team:implement "OAuth login story"
+/product-team:review "OAuth implementation"
+```
+
+### Integration with RPI Plugin (Optional)
+
+If you also have the RPI plugin installed, you can combine workflows:
+
+1. Research (RPI): `/rpi:research "OAuth implementation"`
+2. Plan (RPI): `/rpi:plan ./rpi/oauth/research.md`
+3. Refine (Product Team): `/product-team:refine "Add OAuth login"`
+4. Implement (RPI): `/rpi:implement ./rpi/oauth/plan.md`
+5. Review (Product Team): `/product-team:review "OAuth implementation"`
 
 ## Philosophy
 
@@ -605,6 +662,6 @@ Built with inspiration from real agile teams and the challenges of software deve
 
 ---
 
-**Version:** 0.6.0
+**Version:** 0.7.0
 **Status:** Active Development
-**Last Updated:** 2025-01-25
+**Last Updated:** 2025-11-27

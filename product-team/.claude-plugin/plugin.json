@@ -1,6 +1,6 @@
 {
   "name": "product-team",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Agile product team simulation plugin with specialized agents for different roles and commands for common team activities",
   "author": {
     "name": "Patrick Robinson",
