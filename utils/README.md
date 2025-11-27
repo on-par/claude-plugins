@@ -1,10 +1,42 @@
 # Utils Plugin
 
-Utility agents for system maintenance and troubleshooting in your development environment.
+Utility agents and skills for system maintenance, troubleshooting, and GitHub operations.
 
 ## Overview
 
-The Utils plugin provides specialized agents that help you maintain a clean and efficient development environment. Each agent focuses on a specific maintenance or troubleshooting task, making it easy to keep your system running smoothly.
+The Utils plugin provides specialized agents and skills that help you maintain a clean development environment and interact with GitHub efficiently.
+
+## Skills
+
+### github-cli
+
+GitHub CLI (`gh`) operations for issues, PRs, and repository management.
+
+**Triggers on:**
+- "Get Issue #123"
+- "Review PR #456"
+- "Create PR"
+- "List issues"
+- "Check PR status"
+- "Merge PR"
+
+**Capabilities:**
+- View and manage issues (create, close, comment)
+- Review and manage pull requests (view, diff, approve, merge)
+- Check CI/CD status and PR reviews
+- Access repository information and releases
+- Generic GitHub API access for advanced queries
+
+**Example usage:**
+```
+Get Issue #42
+```
+```
+Review PR #123
+```
+```
+Create an issue for the login bug we just discussed
+```
 
 ## Agents
 

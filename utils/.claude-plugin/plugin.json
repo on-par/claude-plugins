@@ -1,7 +1,7 @@
 {
   "name": "utils",
-  "version": "0.1.0",
-  "description": "Utility agents for system maintenance and troubleshooting",
+  "version": "0.2.0",
+  "description": "Utility agents and skills for system maintenance, troubleshooting, and GitHub operations",
   "author": {
     "name": "Patrick Robinson",
     "email": "patrick@onpardev.com"
@@ -12,6 +12,10 @@
     "maintenance",
     "troubleshooting",
     "system",
-    "process-management"
+    "process-management",
+    "github",
+    "gh",
+    "issues",
+    "pull-requests"
   ]
 }
