@@ -21,9 +21,19 @@
       "description": "Agile product team simulation plugin with specialized agents for different roles and commands for common team activities"
     },
     {
+      "name": "enablement-team",
+      "source": "./enablement-team",
+      "description": "Platform and infrastructure team simulation with DevOps, SRE, cloud specialists, and security experts"
+    },
+    {
       "name": "utensils",
       "source": "./utensils",
       "description": "Minimal, single-purpose agents following the Unix philosophy - each does one thing well with strictly limited tools"
+    },
+    {
+      "name": "utils",
+      "source": "./utils",
+      "description": "Utility agents and skills for system maintenance, troubleshooting, and GitHub operations"
     }
   ]
 }
