@@ -63,14 +63,14 @@ Launch the **product-owner** agent to ask clarifying questions about the feature
 
 Once the Product Owner has sufficient context, launch **parallel research** using Task tool:
 
-1. **Web Research**: Launch `rpi:web-research-specialist` agent to:
+1. **Web Research**: Launch `product-team:web-researcher` agent to:
    - Research best practices and patterns for this type of feature
    - Find relevant libraries, frameworks, and tools
    - Identify security considerations and common pitfalls
    - Use Context7 MCP for latest framework documentation
    - Gather code examples and implementation approaches
 
-2. **Codebase Analysis**: Launch `rpi:codebase-solution-researcher` agent to:
+2. **Codebase Analysis**: Launch `product-team:codebase-analyst` agent to:
    - Analyze existing architecture and patterns
    - Identify affected files and components
    - Understand current implementation patterns to follow
@@ -882,8 +882,8 @@ Ensure both documents are complete:
    - `subagent_type: "product-team:frontend-engineer"`
    - `subagent_type: "product-team:qa-engineer"`
    - `subagent_type: "product-team:scrum-master"`
-   - `subagent_type: "rpi:web-research-specialist"`
-   - `subagent_type: "rpi:codebase-solution-researcher"`
+   - `subagent_type: "product-team:web-researcher"`
+   - `subagent_type: "product-team:codebase-analyst"`
 
 5. **Follow TDD Strictly**
    - Red → Green → Refactor cycle
