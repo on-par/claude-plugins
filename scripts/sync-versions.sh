@@ -29,7 +29,7 @@ get_version() {
 }
 
 # Update version for each plugin
-for plugin_dir in rpi product-team enablement-team utensils; do
+for plugin_dir in rpi product-team enablement-team utensils utils; do
     if [ -d "$plugin_dir" ]; then
         version=$(get_version "$plugin_dir")
 
@@ -51,6 +51,9 @@ for plugin_dir in rpi product-team enablement-team utensils; do
                     ;;
                 "utensils")
                     sed -i '' "s#| \[Utensils\](./utensils/) | [0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]* |#| [Utensils](./utensils/) | ${version} |#" "$TEMP_README"
+                    ;;
+                "utils")
+                    sed -i '' "s#| \[Utils\](./utils/) | [0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]* |#| [Utils](./utils/) | ${version} |#" "$TEMP_README"
                     ;;
             esac
         else

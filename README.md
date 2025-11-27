@@ -10,6 +10,7 @@ A curated collection of Claude Code plugins designed to enhance your development
 | [Product Team](./product-team/) | 0.6.0 | Agile product team simulation plugin with specialized agents for different roles and commands for common team activities |
 | [Enablement Team](./enablement-team/) | 0.1.0 | Platform and infrastructure team simulation with DevOps, SRE, cloud specialists, and security experts |
 | [Utensils](./utensils/) | 0.1.0 | Minimal, single-purpose agents following the Unix philosophy - each does one thing well with strictly limited tools |
+| [Utils](./utils/) | 0.1.0 | Utility agents for system maintenance and troubleshooting |
 
 ## Quick Start
 
