@@ -84,6 +84,12 @@ Follow strict TDD methodology:
 
 ### Engineering Guidelines
 
+**Code Quality Standards:**
+- **No Comments**: Write self-explanatory code; avoid comments unless absolutely necessary
+- **Clean Up Comments**: Remove existing unnecessary comments from code being modified
+- **Clean Code**: Every line should have a clear purpose
+- **Test-Driven**: Always write tests first (TDD is mandatory)
+
 **Backend Engineer Focus:**
 - API endpoint implementation
 - Database schema changes and migrations
@@ -115,6 +121,7 @@ Follow strict TDD methodology:
 **Tech Lead Reviews For:**
 - Code quality and maintainability
 - Adherence to established patterns
+- Absence of unnecessary comments (code should be self-documenting)
 - Test coverage and quality
 - Security vulnerabilities (SQL injection, XSS, etc.)
 - Performance implications
