@@ -35,6 +35,9 @@ After both agents complete their research, synthesize their findings into a comp
 
 Create the research document at: `./rpi/SHORT_NAME/research.md`
 
+SHORT_NAME should include a number in the format `001-short-name`, and be a short description of the problem space.
+The `001` part should increment based on existing rpi subfolders. i.e. if `001-*` exists but no `002-*`, then SHORT_NAME starts with `002-`.
+
 The document must include:
 
 ## 1. Problem Overview
