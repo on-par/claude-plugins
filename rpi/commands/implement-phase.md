@@ -76,3 +76,6 @@ If any task fails:
 - Suggest next steps
 
 **Note**: This command implements an entire phase sequentially, ensuring each task is complete before moving to the next.
+
+- Must not add any documentation unless specified by the plan. Especially not in the rpi subfolder.
+- Don't generate one-off test scripts. Testing must be done with existing frameworks (or add frameworks if part of the plan).

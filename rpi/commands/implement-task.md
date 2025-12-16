@@ -70,3 +70,6 @@ If the task-implementer agent encounters blockers:
 - Keep the task unchecked for retry
 
 **Note**: This command focuses on completing ONE task at a time with high quality and proper testing.
+
+- Must not add any documentation unless specified by the plan. Especially not in the rpi subfolder.
+- Don't generate one-off test scripts. Testing must be done with existing frameworks (or add frameworks if part of the plan).

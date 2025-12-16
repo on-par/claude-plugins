@@ -1,6 +1,6 @@
 {
   "name": "rpi",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Research-Planning-Implementation strategy plugin for structured software development",
   "author": {
     "name": "Patrick Robinson",

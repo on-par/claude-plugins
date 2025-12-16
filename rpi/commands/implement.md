@@ -114,3 +114,6 @@ Before marking a task complete:
 - TodoWrite checklist fully completed by the agent
 
 **Note**: This command orchestrates the entire implementation, maximizing efficiency through parallelization while maintaining correctness through careful dependency analysis. Each sub-agent uses TodoWrite to maintain focus and track granular progress.
+
+- Must not add any documentation unless specified by the plan. Especially not in the rpi subfolder.
+- Don't generate one-off test scripts. Testing must be done with existing frameworks (or add frameworks if part of the plan).
